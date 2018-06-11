@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/design_snackbar_padding_horizontal"
+        android:layout_marginTop="@dimen/design_snackbar_padding_horizontal"
+        android:duplicateParentState="true" />
+
+    <ImageView
+        android:id="@+id/iconLarge"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:duplicateParentState="true"
+        android:visibility="invisible" />
+
+    <android.support.design.internal.BaselineLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:clipToPadding="false"
+        android:duplicateParentState="true"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/largeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:singleLine="true"
+            android:textSize="@dimen/design_bottom_navigation_text_size"
+            android:visibility="visible" />
+    </android.support.design.internal.BaselineLayout>
+</merge>
